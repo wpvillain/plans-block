@@ -1,0 +1,16 @@
+{
+    "name": "plans-table-block",
+    "title": "Plans Table Block",
+    "description": "Displays Plans on any page.",
+    "category": "theme",
+    "apiVersion": 2,
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blocks/plans-table/block.php"
+    },
+    "supports": {
+        "align": true,
+        "mode": false,
+        "jsx": true
+    }
+}
