@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/plans-table",
+	"version": "0.1.0",
+	"title": "Plans Table",
+	"category": "widgets",
+	"attributes": {
+		"planHeadline": {
+			"type": "string"
+		},
+		"planSubhead": {
+			"type": "string"
+		},
+		"planPriceLine": {
+			"type": "string"
+		},
+		"planPeriod": {
+			"type": "string"
+		}
+	},
+	"example": {
+		"attributes": {
+			"planHeadline": "QUARTERLY",
+			"planSubhead": "free week, then",
+			"planPriceLine": "$120",
+			"planPeriod": "a month, billed quarterly"
+		}
+	},
+	"icon": "money",
+	"description": "Plans Table showing all packages available",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "plans-table",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
