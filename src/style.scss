@@ -9,8 +9,27 @@
 
  .dh-plans-columns-block {	
 	.first-column {
+		border: 2px solid #7cefc2;
+		text-align: center;
 		.first-block-header {
 			text-transform: uppercase;
+			background-color: #bbf6e2;
+		}
+	}
+	.second-column {
+		border:2px solid #5728df;
+		text-align: center;
+		.second-block-header {
+			text-transform: uppercase;
+			background-color: #ddd4f9;
+		}
+	}
+	.third-column {
+		border: 2px solid #f5c759;
+		text-align: center;
+		.third-block-header {
+			text-transform: uppercase;
+			background-color: #fbe8bc;
 		}
 	}
 }

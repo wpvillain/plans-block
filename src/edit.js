@@ -12,6 +12,11 @@ import {registerBlockType} from '@wordpress/blocks';
 import {MY_TEMPLATE} from './template';
 
 /**
+ * Border Control
+ */
+// import { __experimentalBorderControl as BorderControl } from '@wordpress/components';
+
+/**
  * React hook that is used to mark the block wrapper element.
  * It provides all the necessary props like the class name.
  *

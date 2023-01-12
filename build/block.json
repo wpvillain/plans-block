@@ -36,7 +36,7 @@
     }
   },
   "icon": "money",
-  "description": "Plans Table showing all packages available",
+  "description": "Plans Table with all packages",
   "supports": {
     "html": false
   },

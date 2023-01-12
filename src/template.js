@@ -21,28 +21,83 @@ export const MY_TEMPLATE = [
                         "content": "quarterly",
                         "className": "first-block-header"
                     }],
-                    ["core/paragraph",
+                    // ["core/paragraph",
+                    //     [
+                    ["core/heading",
                     {
-                        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        "level": 4,
+                        "content": "free week, then",
+                        "className": "first-block-sub-header"
+                    }],
+                    ["core/heading",
+                    {
+                        "level": 4,
+                        "content": "$120",
+                        "className": "first-block-priceline"
+                    }],
+                    ["core/heading",
+                    {
+                        "level": 4,
+                        "content": "a month, billed quarterly",
+                        "className": "first-block-period"
+                    }],
+                    ["core/heading",
+                    {
+                        "level": 4,
+                        "content": "Cancel anytime",
+                        "className": "first-block-byline"
+                    }],
+                    ["core/button",
+                    {
+                        "title": "start my trial",
+                        "text": "START MY TRIAL",
+                        "className": "first-block-button"
                     }]
+                    //     ]
+                    // ]
                 ]
             ],
             ["core/column",
                 {
                     "width": "30%",
                     "className": "second-column",
-                    "className": "third-block-header"
                 },
                 [
                     ["core/heading",
                     {
                         "level": 3,
-                        "content": "anual",
-                        "className": "third-block-header"
+                        "content": "annual",
+                        "className": "second-block-header"
                     }],
-                    ["core/paragraph",
+                    ["core/heading",
                     {
-                        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        "level": 4,
+                        "content": "direct access",
+                        "className": "second-block-sub-header"
+                    }],
+                    ["core/heading",
+                    {
+                        "level": 4,
+                        "content": "$99",
+                        "className": "second-block-priceline"
+                    }],
+                    ["core/heading",
+                    {
+                        "level": 4,
+                        "content": "a month, billed annually",
+                        "className": "second-block-period"
+                    }],
+                    ["core/heading",
+                    {
+                        "level": 4,
+                        "content": "Save $252",
+                        "className": "second-block-byline"
+                    }],
+                    ["core/button",
+                    {
+                        "title": "access now",
+                        "text": "ACCESS NOW",
+                        "className": "second-block-button"
                     }]
                 ]
             ],
@@ -55,11 +110,38 @@ export const MY_TEMPLATE = [
                     ["core/heading",
                     {
                         "level": 3,
-                        "content": "enterprise"
+                        "content": "enterprise",
+                        "className": "third-block-header"
                     }],
-                    ["core/paragraph",
+                    ["core/heading",
                     {
-                        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        "level": 4,
+                        "content": "team plan",
+                        "className": "third-block-sub-header"
+                    }],
+                    ["core/heading",
+                    {
+                        "level": 4,
+                        "content": "custom",
+                        "className": "third-block-priceline"
+                    }],
+                    ["core/heading",
+                    {
+                        "level": 4,
+                        "content": "based on # of users",
+                        "className": "third-block-period"
+                    }],
+                    ["core/heading",
+                    {
+                        "level": 4,
+                        "content": "Contact us for group rates",
+                        "className": "third-block-byline"
+                    }],
+                    ["core/button",
+                    {
+                        "title": "talk to sales",
+                        "text": "TALK TO SALES",
+                        "className": "third-block-button"
                     }]
                 ]
             ]
