@@ -48,24 +48,11 @@ export default function Edit( {attributes, setAttributes} ) {
 
 		return (
 			<div { ...blockProps }>
-				<div className="wp-block-drughunter-plans-table__wrap">
-					<div className="wp-block-drughunter-plans-table__inner"></div>
-					<InnerBlocks
-						template={ MY_TEMPLATE }
-						allowedBlocks={ ALLOWED_BLOCKS }
-						templateLock="all"
-					/>
-				</div>
-				<div className="wp-block-drughunter-plans-project__header">
-						<RichText
-							{ ...blockProps }
-							tagName="h3" // The tag here is the element output and editable in the admin
-							value={planHeadline}
-							contentEditable={false}
-							onChange={text => setAttributes({planHeadline: text})}
-							placeholder={ __( 'Heading...' ) } // Display this text before any content has been added by the user
-						/>
-				</div>
+				<InnerBlocks
+					template={ MY_TEMPLATE }
+					allowedBlocks={ ALLOWED_BLOCKS }
+					templateLock="all"
+				/>
 			</div>
 	);
 }

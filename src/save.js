@@ -16,9 +16,11 @@ import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
  * @return {WPElement} Element to render.
  */
 export default function save() {
-	const blockProps = useBlockProps.save();
+	const blockProps = useBlockProps.save({
+                className: 'dh-plans-table',
+                });
 
         return (
-			<InnerBlocks.Content />
+		<InnerBlocks.Content />
         );
 }

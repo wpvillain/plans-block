@@ -3,10 +3,14 @@
  * and in the editor.
  *
  * Replace them with your own styles or remove the file completely.
+ *
+ * InnerBlock class is not added to the frontend so we use the columns class as wrapper
  */
 
-.wp-block-create-block-plans-table {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+ .dh-plans-columns-block {	
+	.first-column {
+		.first-block-header {
+			text-transform: uppercase;
+		}
+	}
 }
