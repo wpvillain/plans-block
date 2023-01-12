@@ -6,12 +6,18 @@
 import { __ } from '@wordpress/i18n';
 
 /**
+ * Import files for loading meta data and for importing block template data
+ */
+import {registerBlockType} from '@wordpress/blocks';
+import {MY_TEMPLATE} from './template';
+
+/**
  * React hook that is used to mark the block wrapper element.
  * It provides all the necessary props like the class name.
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
+import { RichText, InnerBlocks, useBlockProps } from '@wordpress/block-editor';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -29,18 +35,37 @@ import './editor.scss';
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit() {
-	const MY_TEMPLATE = [
-		[ 'core/image', {} ],
-		[ 'core/heading', { placeholder: 'Book Title' } ],
-		[ 'core/paragraph', { placeholder: 'Summary' } ],
+export default function Edit( {attributes, setAttributes} ) {
+	const ALLOWED_BLOCKS = [
+		'core/image',
+		'core/paragraph',
+		'core/columns',
+		'core/heading'
 	];
 	const blockProps = useBlockProps();
+	const {planHeadline, planSubhead, planPriceLine, planPeriod, planByline, planButtonText} = attributes;
+
 
 		return (
-			<InnerBlocks
-				template={ MY_TEMPLATE }
-				templateLock="all"
-			/>
+			<div { ...blockProps }>
+				<div className="wp-block-drughunter-plans-table__wrap">
+					<div className="wp-block-drughunter-plans-table__inner"></div>
+					<InnerBlocks
+						template={ MY_TEMPLATE }
+						allowedBlocks={ ALLOWED_BLOCKS }
+						templateLock="all"
+					/>
+				</div>
+				<div className="wp-block-drughunter-plans-project__header">
+						<RichText
+							{ ...blockProps }
+							tagName="h3" // The tag here is the element output and editable in the admin
+							value={planHeadline}
+							contentEditable={false}
+							onChange={text => setAttributes({planHeadline: text})}
+							placeholder={ __( 'Heading...' ) } // Display this text before any content has been added by the user
+						/>
+				</div>
+			</div>
 	);
 }
