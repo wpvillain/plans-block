@@ -4,32 +4,141 @@
  *
  * Replace them with your own styles or remove the file completely.
  *
- * InnerBlock class is not added to the frontend so we use the columns class as wrapper
  */
 
- .dh-plans-columns-block {	
+
+.dh-plans-columns-block {	
+	margin: 0 auto;
 	.first-column {
-		border: 2px solid #7cefc2;
+		border: 2px solid #7cefc2; // design green
 		text-align: center;
+		max-width: 400px;
+		margin: 0 auto;
+		@media screen and (max-width: 1024px) {
+			max-width: 100%;
+		}
+		@media screen and (max-width: 768px) {
+			max-width: 400px;
+		}
 		.first-block-header {
 			text-transform: uppercase;
 			background-color: #bbf6e2;
+			padding: 0.7rem 0;
+		}
+		.first-block-sub-header {
+			font-size: 2.5rem;
+			font-weight: bold;
+		}
+		.first-block-priceline {
+			font-size: 4rem;
+		}
+		.first-block-period {
+			font-weight: bold;
+			font-size:1.2rem;
+		}
+		.first-block-button {
+			padding-bottom: 1rem;
+			.wp-block-button__link {
+				background-color: #38e8ad; // theme green
+				color: #000;
+			&:hover {
+				background-color: #16c188; // 25% darker https://pinetools.com/darken-color
+			}
+			}
 		}
 	}
 	.second-column {
-		border:2px solid #5728df;
+		border:2px solid #5728df; // theme purple
 		text-align: center;
+		max-width: 400px;
+		margin: 0 auto;
+		@media screen and (max-width: 1024px) {
+			max-width: 100%;
+		}
+		@media screen and (max-width: 768px) {
+			max-width: 400px;
+		}
 		.second-block-header {
 			text-transform: uppercase;
 			background-color: #ddd4f9;
+			padding: 0.7rem 0;
+		}
+		.second-block-sub-header {
+			font-size: 2.5rem;
+			font-weight: bold;
+		}
+		.second-block-priceline {
+			font-size: 4rem;
+		}
+		.second-block-period {
+			font-weight: bold;
+			font-size:1.2rem;
+		}
+		.second-block-button {
+			padding-bottom: 1rem;
 		}
 	}
 	.third-column {
 		border: 2px solid #f5c759;
 		text-align: center;
+		max-width: 400px;
+		margin: 0 auto;
+		@media screen and (max-width: 1024px) {
+			max-width: 100%;
+		}
+		@media screen and (max-width: 768px) {
+			max-width: 400px;
+		}
 		.third-block-header {
 			text-transform: uppercase;
 			background-color: #fbe8bc;
+			padding: 0.7rem 0;
+		}
+		.third-block-sub-header {
+			font-size: 2.5rem;
+			font-weight: bold;
+		}
+		.third-block-priceline {
+			font-size: 4rem;
+		}
+		.third-block-period {
+			font-weight: bold;
+			font-size:1.2rem;
+		}
+		.third-block-button {
+			padding-bottom: 1rem;
+			.wp-block-button__link {
+				background-color: #f5c757; // yellow as on design, not quite like theme yellow
+				color: #000;
+				&:hover {
+					background-color: #ebaa0d // 25% darker
+				}
+			}
+		}
+	}
+	/**
+	* To deal with Newsletter rule interference for viewports up until 992px
+	*/
+	@media (max-width: 991px) {
+		.is-layout-flow.wp-block-column.second-column,
+		.is-layout-flow.wp-block-column.third-column {
+		margin-left: auto !important;
+		}
+	}
+
+}
+
+
+/**
+* inside of entry-content to avoid touching editor side display
+* necessary for some selectors
+*
+*/
+.entry-content {
+	.dh-plans-columns-block {
+		.wp-block-button__link {
+		width:90%;
+		margin: 0 auto;
 		}
 	}
 }

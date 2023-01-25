@@ -45,7 +45,8 @@ export default function Edit( {attributes, setAttributes} ) {
 		'core/image',
 		'core/paragraph',
 		'core/columns',
-		'core/heading'
+		'core/heading',
+		'core/button'
 	];
 	const blockProps = useBlockProps();
 	const {planHeadline, planSubhead, planPriceLine, planPeriod, planByline, planButtonText} = attributes;
