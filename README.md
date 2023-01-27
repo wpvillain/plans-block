@@ -1,7 +1,6 @@
 # Plans Table Block
 
-
-WordPress Gutenberg block built with `@wordpress/create-block` to display a plans table in columns loading Advanced Custom Fields (ACF) Data.
+WordPress Gutenberg block built with `@wordpress/create-block` to display a plans table in columns. This block can be installed as a plugin or loaded from `functions.php`
 
 ## Plans
 
@@ -16,4 +15,13 @@ The Plans table is a columns block. It has three columns and each column has
 - priceline - heading
 - period - paragraph
 - byline - paragraph
+
+All blocks are added to `innerBlocks` in `src/edit.js` for the editor and in `src/save.js` again for saving data all based on `src/template.js`
+## Styling
+
+Main stylesheet is `src/style.scss` but for editor specific needs you add styles to `src/editor.scss`
+
+## Building
+
+Building you do inside the plugin using `npm run build` to build for production.
 
