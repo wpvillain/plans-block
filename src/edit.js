@@ -57,7 +57,7 @@ export default function Edit( {attributes, setAttributes} ) {
 				<InnerBlocks
 					template={ MY_TEMPLATE }
 					allowedBlocks={ ALLOWED_BLOCKS }
-					templateLock="all"
+					templateLock={false}
 				/>
 			</div>
 	);

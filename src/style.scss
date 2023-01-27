@@ -26,15 +26,19 @@
 			padding: 0.7rem 0;
 		}
 		.first-block-sub-header {
-			font-size: 2.5rem;
+			font-size: 3rem;
 			font-weight: bold;
 		}
 		.first-block-priceline {
-			font-size: 4rem;
+			font-size: 5rem;
 		}
 		.first-block-period {
 			font-weight: bold;
-			font-size:1.2rem;
+			font-size:1.5rem;
+		}
+		.first-block-byline {
+			font-style: italic;
+			font-weight: bold;
 		}
 		.first-block-button {
 			padding-bottom: 1rem;
@@ -64,15 +68,19 @@
 			padding: 0.7rem 0;
 		}
 		.second-block-sub-header {
-			font-size: 2.5rem;
+			font-size: 3rem;
 			font-weight: bold;
 		}
 		.second-block-priceline {
-			font-size: 4rem;
+			font-size: 5rem;
 		}
 		.second-block-period {
 			font-weight: bold;
-			font-size:1.2rem;
+			font-size:1.5rem;
+		}
+		.second-block-byline {
+			font-style: italic;
+			font-weight: bold;
 		}
 		.second-block-button {
 			padding-bottom: 1rem;
@@ -95,15 +103,19 @@
 			padding: 0.7rem 0;
 		}
 		.third-block-sub-header {
-			font-size: 2.5rem;
+			font-size: 3rem;
 			font-weight: bold;
 		}
 		.third-block-priceline {
-			font-size: 4rem;
+			font-size: 5rem;
 		}
 		.third-block-period {
 			font-weight: bold;
-			font-size:1.2rem;
+			font-size:1.5rem;
+		}
+		.third-block-byline {
+			font-style: italic;
+			font-weight: bold;
 		}
 		.third-block-button {
 			padding-bottom: 1rem;
@@ -139,6 +151,7 @@
 		.wp-block-button__link {
 		width:90%;
 		margin: 0 auto;
+		font-size: 1.2rem;
 		}
 	}
 }
