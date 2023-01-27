@@ -3,8 +3,17 @@
 
 WordPress Gutenberg block built with `@wordpress/create-block` to display a plans table in columns loading Advanced Custom Fields (ACF) Data.
 
-Each plan will load a header, sub header, priceline, plan perdio, byline, button.
+## Plans
 
-Each column will have a styled header, border, be stacked on mobile
+Each tablet has three columns representing three plans. Content is added to these plans that can be updated. Blocks is unlocked to allow easy adding of other blocks
 
-**This block is still in progress**
+## Blocks
+
+The Plans table is a columns block. It has three columns and each column has
+
+- header - heading
+- sub header - heading
+- priceline - heading
+- period - paragraph
+- byline - paragraph
+
